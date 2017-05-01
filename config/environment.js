@@ -4,6 +4,15 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'todo',
     environment: environment,
+    contentSecurityPolicy: {'connect-src': "'self' wss://*.firebaseio.com"},
+    firebase: {
+      apiKey: "AIzaSyCCFfX8jq6syTu23jrazE6lEV0c2Gtzylo",
+      authDomain: "ember-todo-b749a.firebaseapp.com",
+      databaseURL: "https://ember-todo-b749a.firebaseio.com",
+      projectId: "ember-todo-b749a",
+      storageBucket: "ember-todo-b749a.appspot.com",
+      messagingSenderId: "509246593200"
+    },
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
