@@ -7,9 +7,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('todos', function() {
+  this.route('todos', {resetNamespace: true}, function() {
     this.route('new');
-    this.route('edit');
+    this.route('edit', {path: '/edit/:todo_id'});
   });
 });
 
