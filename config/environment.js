@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'todo',
+    modulePrefix: '',
     environment: environment,
     contentSecurityPolicy: {'connect-src': "'self' wss://*.firebaseio.com"},
     firebase: {
