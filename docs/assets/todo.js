@@ -397,8 +397,8 @@ define('todo/torii-providers/firebase', ['exports', 'emberfire/torii-providers/f
 });
 
 
-define('ember-todo-app/config/environment', ['ember'], function(Ember) {
-  var prefix = 'ember-todo-app';
+define('todo/config/environment', ['ember'], function(Ember) {
+  var prefix = 'todo';
 try {
   var metaName = prefix + '/config/environment';
   var rawConfig = document.querySelector('meta[name="' + metaName + '"]').getAttribute('content');
@@ -417,6 +417,6 @@ catch(err) {
 });
 
 if (!runningTests) {
-  require("ember-todo-app/app")["default"].create({"name":"todo","version":"0.0.0+57d2fa76"});
+  require("todo/app")["default"].create({"name":"todo","version":"0.0.0+73672a2c"});
 }
 //# sourceMappingURL=todo.map
