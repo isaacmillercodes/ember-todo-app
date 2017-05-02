@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'todo',
+    modulePrefix: 'ember-todo',
     environment: environment,
     contentSecurityPolicy: {'connect-src': "'self' wss://*.firebaseio.com"},
     firebase: {
@@ -13,7 +13,7 @@ module.exports = function(environment) {
       storageBucket: "ember-todo-b749a.appspot.com",
       messagingSenderId: "509246593200"
     },
-    rootURL: '/',
+    rootURL: '/ember-todo-app/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
@@ -52,7 +52,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.locationType = 'hash';
+    ENV.rootURL = '/ember-todo-app/';
   }
 
   return ENV;
