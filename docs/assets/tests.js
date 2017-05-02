@@ -536,6 +536,6 @@ define('todo/tests/unit/routes/todos/new-test.lint-test', ['exports'], function 
     assert.ok(true, 'unit/routes/todos/new-test.js should pass ESLint.\n');
   });
 });
-require('ember-todo/tests/test-helper');
+require('ember-todo-app/tests/test-helper');
 EmberENV.TESTS_FILE_LOADED = true;
 //# sourceMappingURL=tests.map
